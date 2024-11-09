@@ -7,8 +7,9 @@ import (
 	"os"
 	"strconv"
 
-	"github.com/kujourinka/mhws_beta_server/backend"
-	"github.com/kujourinka/mhws_beta_server/config"
+	"mhws_beta_server/backend"
+	"mhws_beta_server/config"
+
 	"github.com/spf13/cobra"
 )
 

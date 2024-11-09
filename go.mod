@@ -1,4 +1,4 @@
-module github.com/kujourinka/mhws_beta_server
+module mhws_beta_server
 
 go 1.23.1
 
