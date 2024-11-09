@@ -13,7 +13,7 @@ import (
 	"github.com/vmihailenco/msgpack/v5"
 )
 
-const apiHost = "mhws.io"
+const apiHost = "hjm.rebe.capcom.com"
 
 var userId = newUUID()
 var hunterId string
@@ -55,8 +55,8 @@ func registerSystemJson(r *gin.Engine) {
 		cp := CustomProperty{
 			ObtInfo: &ObtInfo{
 				Env:       1,
-				StartTime: 1730428200, // UTC+8 2024-11-01 10:30:00
-				EndTime:   time.Now().Unix() + 114514,
+				StartTime: 1730428200,                   // UTC+8 2024-11-01 10:30:00
+				EndTime:   time.Now().Unix() + 31536000, // Add 1 year to current time
 			},
 			QA3: &QA3{
 				Api:    "https://" + apiHost,
@@ -70,6 +70,13 @@ func registerSystemJson(r *gin.Engine) {
 		e := base64.StdEncoding.EncodeToString(cpJsonByte)
 		data.CustomProperty = e
 		c.JSON(200, data)
+	})
+	r.GET("/consents/EAR-B-WW/analysis/1/en.json", func(c *gin.Context) {
+		m, err := filenameToMap("en.json")
+		if err != nil {
+			c.JSON(400, gin.H{"error": err.Error()})
+		}
+		c.JSON(200, m)
 	})
 	r.GET("/consents/EAR-B-WW/analysis/1/zh-hans.json", func(c *gin.Context) {
 		m, err := filenameToMap("zh-hans.json")
