@@ -4,7 +4,8 @@ import (
 	"net"
 	"os"
 
-	"github.com/kujourinka/mhws_beta_server/backend"
+	"mhws_beta_server/backend"
+
 	"github.com/spf13/cobra"
 )
 
