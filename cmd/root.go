@@ -4,15 +4,10 @@ import (
 	"crypto/tls"
 	"log"
 	"net/http"
-	"crypto/tls"
-	"log"
-	"net/http"
 	"os"
-	"strconv"
 	"strconv"
 
 	"mhws_beta_server/backend"
-	"mhws_beta_server/config"
 	"mhws_beta_server/config"
 
 	"github.com/spf13/cobra"
@@ -20,10 +15,7 @@ import (
 
 var cfg config.Config
 
-var cfg config.Config
-
 var rootCmd = &cobra.Command{
-	Use: "mhws_beta_server [-a address] [-p port] [-c root_cert] [-k root_key] [--cert-domain \"d1,d2\"] [--api-host host]",
 	Use: "mhws_beta_server [-a address] [-p port] [-c root_cert] [-k root_key] [--cert-domain \"d1,d2\"] [--api-host host]",
 	Run: mainRun,
 }
@@ -69,20 +61,7 @@ func mainRun(cmd *cobra.Command, args []string) {
 	subCert, err := backend.GenerateDomainCert(&cfg)
 	if err != nil {
 		log.Fatalf("Error loading root certificate and key: %v", err)
-	subCert, err := backend.GenerateDomainCert(&cfg)
-	if err != nil {
-		log.Fatalf("Error loading root certificate and key: %v", err)
 	}
-
-	e := backend.RegisterHandler(&cfg)
-	server := http.Server{
-		Addr:    cfg.ListenAddr + ":" + strconv.Itoa(int(cfg.ListenPort)),
-		Handler: e,
-		TLSConfig: &tls.Config{
-			Certificates: []tls.Certificate{*subCert},
-		},
-	}
-	_ = server.ListenAndServeTLS("", "")
 
 	e := backend.RegisterHandler(&cfg)
 	server := http.Server{
