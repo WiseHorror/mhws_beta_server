@@ -11,7 +11,6 @@ import (
 	"github.com/gin-gonic/gin"
 	"github.com/google/uuid"
 	"github.com/gorilla/websocket"
-	"github.com/kujourinka/mhws_beta_server/config"
 	"github.com/vmihailenco/msgpack/v5"
 )
 
