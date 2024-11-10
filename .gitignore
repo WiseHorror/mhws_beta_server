@@ -6,9 +6,9 @@
 build/
 # asserts/
 # cert/
-.key
-.crt
-.csr
+*.key
+*.crt
+*.csr
 
 # Binaries for programs and plugins
 *.exe
