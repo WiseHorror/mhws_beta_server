@@ -9,6 +9,8 @@ build/
 *.key
 *.crt
 *.csr
+*.pem
+*.pub
 
 # Binaries for programs and plugins
 *.exe
@@ -32,3 +34,6 @@ go.work.sum
 
 # env file
 .env
+
+# python
+*.py
