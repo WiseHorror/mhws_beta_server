@@ -34,3 +34,6 @@ go.work.sum
 
 # batch files
 *.bat
+
+# batch files
+*.bat
