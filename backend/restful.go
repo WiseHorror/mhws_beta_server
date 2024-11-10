@@ -87,6 +87,13 @@ func registerSystemJson(r *gin.Engine, cfg *config.Config) {
 		}
 		c.JSON(200, m)
 	})
+	r.GET("/v1/token/refresh/", func(c *gin.Context) {
+		m, err := filenameToMap("refresh.json")
+		if err != nil {
+			c.JSON(400, gin.H{"error": err.Error()})
+		}
+		c.JSON(200, m)
+	})
 }
 
 func registerListPartyQos(r *gin.Engine, cfg *config.Config) {
