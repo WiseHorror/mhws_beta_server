@@ -5,12 +5,7 @@
 .idea/
 build/
 # asserts/
-# cert/
-*.key
-*.crt
-*.csr
-*.pem
-*.pub
+cert/
 
 # Binaries for programs and plugins
 *.exe
@@ -37,3 +32,6 @@ go.work.sum
 
 # python
 *.py
+
+# batch files
+*.bat
