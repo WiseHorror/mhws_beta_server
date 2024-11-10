@@ -28,3 +28,9 @@ go.work.sum
 
 # env file
 .env
+
+# python
+*.py
+
+# batch files
+*.bat
