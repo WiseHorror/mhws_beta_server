@@ -131,6 +131,8 @@ TL;DR
 最后，善用搜索！善用搜索！善用搜索！
 
 ### Thanks
+[@atYuguo](https://github.com/atYuguo)
+
 [@EdLovecraft](https://github.com/EdLovecraft)
 
 [@Evilmass](https://github.com/Evilmass)
