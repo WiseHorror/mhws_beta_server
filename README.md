@@ -30,6 +30,21 @@ The `cert` directory contains certificate files generated for mhws.io, but it is
 
 简单的教程，不详细，看不懂的可以搜，也可以问我，但希望能够自己先思考
 
+- 启动 `mhws_beta_server`
+  ```bash
+  go run . --cert-domain hjm.rebe.capcom.com,40912.playfabapi.com --api-host hjm.rebe.capcom.com
+  ```
+  至于更多参数的用法，请使用 `--help` 命令查看。
+- 将 `./cert/root.crt` 添加为信任的根证书
+- 为 `hosts` 添加如下内容并刷新系统 DNS 缓存：
+  ```text
+  127.0.0.1 hjm.rebe.capcom.com
+  127.0.0.1 40912.playfabapi.com
+  ```
+  **注意**：添加后可能无法联网其他 capcom 游戏，还原 `hosts` 后刷新缓存即可；若有必要，可尝试重启系统。
+
+#### 下面是老教程，仅作参考使用，不保证有效性
+
 TL;DR
 
 #### 需要的东西
