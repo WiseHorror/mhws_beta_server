@@ -32,15 +32,6 @@ This project is intended solely for educational and learning purposes and must n
 4. Install the certificate by going to the cert folder and double-clicking `root.crt` > Install Certificate... > Local Machine > Place all certificates in the following store > Browse > Trusted Root Certification Authorities > OK > Next > Finish
 5. Run the game and you should be able to play!
 
-## Apology (from original author)
-Due to my oversight in code review, sensitive information was exposed, causing inconvenience and confusion for other developers. I apologize to the other developers([APOLOGY.md](APOLOGY.md)), refer to [#3](https://github.com/KujouRinka/mhws_beta_server/issues/3) and [#4](https://github.com/KujouRinka/mhws_beta_server/pull/4).
-
-由于本人审查代码疏忽导致出现了敏感信息而给其他开发者造成了不便于困惑，在这里向其他开发者致歉([APOLOGY.md](APOLOGY.md))，请参考 [#3](https://github.com/KujouRinka/mhws_beta_server/issues/3) 与 [#4](https://github.com/KujouRinka/mhws_beta_server/pull/4)
-
-I hope everyone can learn from my example and avoid making such stupid mistakes out of negligence.
-
-希望大家以我为戒，不要因为疏忽做出这么愚蠢的事
-
 ## Thanks
 [@EdLovecraft](https://github.com/EdLovecraft)
 
