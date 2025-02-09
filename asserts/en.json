@@ -1,0 +1,17 @@
+{
+    "app": "EAR-B-WW",
+    "consent_type": "analysis",
+    "consent_version": 1,
+    "language": "en",
+    "button_agree": "Agree",
+    "button_disagree": "Disagree",
+    "button_links": [
+      {
+        "text": "Privacy Policy",
+        "url": "https://www.capcom.co.jp/privacy/game/"
+      }
+    ],
+    "content": "CAPCOM Co., Ltd. (hereinafter referred to as “the Company”) will, based on the consent of the customer, use certain personal information collected during gameplay of 'Monster Hunter Wilds Beta Test' (this test) for the following purposes.\r\nParticipation in this test is limited to those who consent to the Company's data processing for analytical purposes.\r\n\r\n\r\n● Target Information:\r\nInformation such as the following will be collected along with the platform account.\r\nInformation related to customer actions in the game, information regarding the game operating environment, and records in the event of game malfunctions.\r\n※ For more details on the information collected by the Company, please refer to the 'Privacy Policy (Home Video Games and PC Games)'\r\n(URL: https://www.capcom.co.jp/privacy/game/).\r\n\r\n● Purpose of Use:\r\nFor the purpose of improving the service of 'Monster Hunter Wilds,' developing new features, and creating better games and services in the future, as well as for analysis related to promotional activities (including statistical disclosures).\r\n\r\n\r\n※ Since the information collected includes the platform account, when customers use the same platform account for other games of the Company, information collected in this game may be combined with information collected in other games for analytical purposes.\r\n\r\n※ If the Company's universal account service, 'CAPCOM ID,' is used for the game, information provided in other services applicable to CAPCOM ID may be combined with information collected in this game for analysis.\r\n\r\n● Other:\r\nRegardless of the customer's country of residence, the information collected may be transmitted or stored on servers managed by CAPCOM within Japan, or on servers located in Japan or the United States operated by cloud service providers under contract with CAPCOM.\r\n\r\nAll matters not specified in this statement regarding the handling of customer personal information are governed by the Company's 'Privacy Policy (Home Video Games and PC Games).' Please be sure to review this policy before giving your consent.\r\n\r\nDo you consent to the Company's data processing for analytical purposes?",
+    "subject": "Data Processing for Analytical Purposes"
+  }
+  
