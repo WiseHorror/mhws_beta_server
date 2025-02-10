@@ -9,6 +9,12 @@ This project is intended solely for educational and learning purposes and must n
 
 ## Usage
 
+> [!TIP]
+> **Download the files above by clicking Code (green button) > Download ZIP**
+> 
+> ![image](https://github.com/user-attachments/assets/b19b18ce-30a0-40c8-87d4-0d0627dd78f4)
+
+
 ### Edit hosts file
 
 > [!WARNING]
@@ -17,20 +23,22 @@ This project is intended solely for educational and learning purposes and must n
 1. Navigate to `C:\Windows\System32\drivers\etc`
 2. Open the `hosts` file with any text editor.
 3. Add these new lines at the bottom of the file:
-   - `127.0.0.1 hjm.rebe.capcom.com`
-   - `127.0.0.1 40912.playfabapi.com`
-   - `127.0.0.1 obt-api.wilds.monsterhunter.com`
-4. Save the file.
+   ```
+   127.0.0.1 hjm.rebe.capcom.com
+   127.0.0.1 40912.playfabapi.com
+   127.0.0.1 obt-api.wilds.monsterhunter.com
+5. Save the file.
 
 ### Install the Go programming language and run the server
 
 1. Install the Go programming language by going [here](https://go.dev/dl/) and choosing the correct version for your system.
 2. Open a terminal window in this project's root directory by doing right-click > Open in Terminal
 > [!NOTE]  
-> Optional but convenient: Create a .bat file in the project's root directory and paste the command below.
+> **Optional but convenient: Create a .bat file in the project's root directory and paste the command below.**
 3. Run the following command: `go run mhws_beta_server`
-4. Install the certificate by going to the cert folder and double-clicking `root.crt` > Install Certificate... > Local Machine > Place all certificates in the following store > Browse > Trusted Root Certification Authorities > OK > Next > Finish
-5. Run the game and you should be able to play!
+4. A new folder `cert` should now appear
+5. Install the certificate by going to the `cert` folder and double-clicking `root.crt` > Install Certificate... > Local Machine > Place all certificates in the following store > Browse > Trusted Root Certification Authorities > OK > Next > Finish
+6. Run the game and you should be able to play!
 
 ## Thanks
 [@EdLovecraft](https://github.com/EdLovecraft)
