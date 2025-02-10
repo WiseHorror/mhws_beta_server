@@ -10,7 +10,7 @@ This project is intended solely for educational and learning purposes and must n
 ## Usage
 
 > [!TIP]
-> **Download the files above by clicking Code (green button) > Download ZIP**
+> **Download the files above by clicking Code > Download ZIP**
 > 
 > ![image](https://github.com/user-attachments/assets/b19b18ce-30a0-40c8-87d4-0d0627dd78f4)
 
